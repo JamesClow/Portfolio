@@ -1,0 +1,28 @@
+service: serverless-side-rendering-vue-nuxt
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-west-1
+
+functions:
+  nuxt:
+    handler: handler.nuxt
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+plugins:
+  - serverless-apigw-binary
+  - serverless-domain-manager
+
+custom:
+  apigwBinary:
+    types:
+      - '*/*'
+  customDomain:
+    domainName: james-ux.com
+    basePath: ''
+    stage: dev
+    createRoute53Record: true

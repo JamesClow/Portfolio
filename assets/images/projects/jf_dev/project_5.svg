@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 443.8 702.7" style="enable-background:new 0 0 443.8 702.7;" xml:space="preserve"
+	>
+<style type="text/css">
+	.st0{fill:#D95C5E;}
+	.st1{fill:#F15C5E;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#C4C1CC;}
+	.st4{font-family:'Montserrat-Bold';}
+	.st5{font-size:25px;}
+	.st6{fill:#615974;}
+	.st7{font-size:59px;}
+</style>
+<g id="Group_157" transform="translate(-406.427 -3140.155)">
+	<g id="welcome_robot" transform="translate(586.74 3344.884)">
+		<path id="Path_235" class="st0" d="M28.8,103L5.1,130.3L-9,117.4l22.5-25.6"/>
+		<path id="Path_236" class="st1" d="M11.2,84.5l66,0.1l-3.8,47.2L11.1,131"/>
+		<path id="Path_237" class="st0" d="M24.4,136.4l35.6-0.5l-0.1,19.2l-33.6,0.3"/>
+		<ellipse id="Ellipse_20" class="st0" cx="52.1" cy="1.5" rx="8" ry="8"/>
+		
+			<rect id="Rectangle_276" x="32.4" y="17.3" transform="matrix(9.999875e-02 -0.995 0.995 9.999875e-02 26.5027 67.9646)" class="st0" width="36.8" height="4.1"/>
+		<path id="Path_238" class="st1" d="M0.6,28.6L88,31.8l-2.7,47.1L2.7,75.3"/>
+		<ellipse id="Ellipse_21" class="st2" cx="60.3" cy="54.6" rx="8.8" ry="8.8"/>
+		<ellipse id="Ellipse_22" class="st2" cx="28.2" cy="52.5" rx="8.8" ry="8.8"/>
+		<path id="Path_239" class="st0" d="M59.5,93.3l37.6-22.7l10.2,16.2l-35.6,21.3"/>
+	</g>
+	<text transform="matrix(1 0 0 1 513.997 3641.5051)" class="st3 st4 st5">Welcome to Juvo</text>
+	<text transform="matrix(1 0 0 1 539.997 3602.5051)" class="st6 st4 st7">Hello!</text>
+</g>
+</svg>
