@@ -49,7 +49,6 @@
       }
       .persona-container{
         display: flex;
-        margin-top: 80px;
         @media screen and (max-width: 760px){
           flex-direction: column;
         }
@@ -90,9 +89,6 @@
       }
       .row{
         display: flex;
-        &:not(:last-child){
-          margin-bottom: 40px;
-        }
         .name{
           width: 36%;
         }
@@ -115,12 +111,16 @@
           <div class="company macro bold">
             Juris Futura
           </div>
-          <div class="role-title small">
+          <br />
+          <br />
+          <div class="role-title small bold">
             My Roles
           </div>
+          <br />
           <div class="role">
             Front End Developer
           </div>
+          <br />
           <div class="role">
             UI / UX Design
           </div>
@@ -152,7 +152,7 @@
       </div>
     </div>
     <div class="guid-container limiter-narrow section">
-      <div class="small-section-title center-text large">
+      <div class="small-section-title center-text large bold highlight">
         Guiding Principles
       </div>
       <div class="row">
@@ -163,6 +163,8 @@
           Essential elements need to stand out with the use of size, color, movement, and weight. 
         </div>
       </div>
+      <br />
+      <br />
       <div class="row">
         <div class="name label bold">
           Discoverability
@@ -171,6 +173,8 @@
           The user should be able to quickly figure out what each element does and how it will interact with other elements.
         </div>
       </div>
+      <br />
+      <br />
       <div class="row">
         <div class="name label bold">
           Feedback
@@ -179,6 +183,8 @@
           The result of any action should be clear to the user.
         </div>
       </div>
+      <br />
+      <br />
       <div class="row">
         <div class="name label bold">
           Constraints
@@ -187,6 +193,8 @@
           Do not overwhelm the user with too many options. 
         </div>
       </div>
+      <br />
+      <br />
       <div class="row">
         <div class="name label bold">
           Orientation
@@ -195,6 +203,8 @@
           The user should always know where they are and how to get back to the previous state. 
         </div>
       </div>
+      <br />
+      <br />
       <div class="row">
         <div class="name label bold">
           Expectations
@@ -220,23 +230,28 @@
       <div class="summary-title large">
         Differing Mindsets
       </div>
+      <br />
       <div class="">
         We found that we had two very different types of users. 
       </div>
+      <br />
+      <br />
       <div class="persona-container">
         <div class="col">
-          <div class="small-section-title">
+          <div class="small-section-title bold highlight">
             The Attorney
           </div>
+          <br />
           <div class="summary">
             “I want something easy to use”<br /><br />
             The Attorney wants to spend as little time as possible learning about and using new applications. They want a single button to push. 
           </div>
         </div>
         <div class="col">
-          <div class="small-section-title">
+          <div class="small-section-title bold highlight">
             The Engineer
           </div>
+          <br />
           <div class="summary">
             “I want something customizable”<br /><br />
             The Engineer wants to make adjustments to every parameter and wants the freedom to configure every detail.
@@ -248,21 +263,27 @@
       <div class="summary-title large">
         Focus Areas
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>Respect the user's time
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>Intuitive and straightforward on the surface
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>Highly configurable behind the scenes
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>The user should feel empowered to get things done
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>Make the user feel welcome
       </div>
+      <br />
       <div class="list-row">
         <span class="bullet"></span>Develop shortcuts for power users
       </div>
@@ -286,6 +307,7 @@
       <div class="summary-title large">
         Tools
       </div>
+      <br />
       <div class="tools large-text">
         <span class="tool">
           <span class="bullet"></span>Vue.js

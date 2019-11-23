@@ -74,6 +74,9 @@ div, .regular{
 .bold{
   font-weight: 700;
 }
+.highlight{
+  color: $highlight;
+}
 .label{
   color: $highlight;
   font-weight: 700;
@@ -302,10 +305,8 @@ div, .regular{
 
 .role-title { 
   color: $text-light;
-  margin-bottom: 15px;
 }
 .role { 
-  margin-bottom: 15px;
   font-weight: 700;
 }
 
@@ -338,7 +339,6 @@ div, .regular{
 
 .company{
   color: $highlight;
-  margin-bottom: 40px;
 }
 
 
@@ -463,7 +463,7 @@ div, .regular{
 .list-row{
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .next{

@@ -160,7 +160,7 @@
             margin-top: 20px;
           }
           .skill-title { 
-            color: $text-light;
+            // color: $text-light;
             // margin-top: 30px;
           }
           .skill-text { 
@@ -284,10 +284,11 @@
             </div>
           </div>
         </div> -->
-        <div class="welcome-message mega">
-          I love combining art and<br />
-          technology. Together they <br />
-          make something magical.
+        <div class="welcome-message large">
+          I love combining technology,  <br />
+          art and psychology. Together  <br />
+          they make something magical.
+          <br />
           <br />
           <br />
           <!-- I love creating memorable<br />
@@ -313,6 +314,7 @@
         </div>
         <br />
         <br />
+        <br />
         <div class="faq">
           <div class="faq-title bold">
             What makes a great app experience? 
@@ -322,6 +324,7 @@
             The app should warmly welcome the user and reward them for taking the plunge to use your product. Then it should provide an environment in which the user feels empowered to accomplish their tasks quickly and easily. 
           </div>
         </div>
+        <br />
         <br />
         <br />
         <div class="faq">
@@ -356,7 +359,7 @@
         <div class="experience resume-section">
           <br />
           <br />
-          <div class="resume-title list mega">
+          <div class="resume-title list">
             <!-- <img src="../assets/images/data.svg" class="section-image education"/> -->
             Experiences
           </div>
@@ -364,9 +367,9 @@
           <br />
           <div class="job">
             <div class="job-title bold large">
-              <span class="bullet"></span>Senior UI Developer
+              Senior UI Developer
             </div>
-            <div class="company-name bold">
+            <div class="company-name bold large ">
               Juris Futura
             </div>
             <br />
@@ -389,9 +392,9 @@
           <br />
           <div class="job">
             <div class="job-title bold large">
-              <span class="bullet"></span>Jr Software Developer
+              Jr Web Developer
             </div>
-            <div class="company-name bold">
+            <div class="company-name bold large">
               Tendril
             </div>
             <br />
@@ -410,9 +413,9 @@
           <br />
           <div class="job">
             <div class="job-title bold large">
-              <span class="bullet"></span>Software Engineering Intern
+              Software Engineering Intern
             </div>
-            <div class="company-name bold">
+            <div class="company-name bold large">
               Spectra Logic
             </div>
             <br />
@@ -429,9 +432,9 @@
           <br />
           <div class="job">
             <div class="job-title large">
-              <span class="bullet"></span>Web Design Intern
+              Web Design Intern
             </div>
-            <div class="company-name bold">
+            <div class="company-name bold large">
               ISupportU
             </div>
             <br />
@@ -451,7 +454,7 @@
         <div class="experience resume-section">
           <br />
           <br />
-          <div class="resume-title mega">
+          <div class="resume-title">
             <!-- <img src="../assets/images/education.svg" class="section-image education "/> -->
             Education
           </div>
@@ -461,13 +464,15 @@
             <div class="job-title large">
               University of Denver
             </div>
+            <div class="company-name bold large">
+              B.S. Computer Science
+            </div>
             <br />
-            <div class="job-date">
+            <div class="job-date small">
               Sept 2012 - June 2016
             </div>
             <div class="job-description">
               <br />
-              B.S. Computer Science<br />
               Minors: Emergent Digital Practices & Mathematics
             </div>
           </div>
@@ -479,25 +484,60 @@
         <div class="fav-tools resume-section">
           <br />
           <br />
-          <div class="resume-title mega">
+          <div class="resume-title">
             <!-- <img src="../assets/images/design.svg" class="section-image education"/> -->
             Favorite Tools
           </div>
           <br />
           <br />
-          <div class="skill-title small">
+          <div class="skill-title large bold highlight">
             Web Development
           </div>
+          <br />
           <div class="skill-text">
-            JavaScript (ES6), HTML5, SASS, GSAP<br />
-            VueJS, Vuex, Nuxt, Webpack, Node.js
+            <span class="tool">
+              <span class="bullet"></span>JavaScript (ES6)
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Vue.js
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Vuex
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>SASS
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>GSAP
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Nuxt
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Webpack
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Node.js
+            </span>
           </div>
           <br />
-          <div class="skill-title small">
+          <div class="skill-title large bold highlight">
             Design
           </div>
+          <br />
           <div class="skill-text">
-            Adobe ( Xd, Ps, Ai, Ae )
+            <span class="tool">
+              <span class="bullet"></span>Adobe XD
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Illustrator
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>Photoshop
+            </span>
+            <span class="tool">
+              <span class="bullet"></span>After Effects
+            </span>
           </div>
         </div>
         <!-- <br />
@@ -533,13 +573,13 @@
         <div class="contact-container resume-section">
           <br />
           <br />
-          <div class="resume-title mega">
+          <div class="resume-title">
             <!-- <img src="../assets/images/computer.svg" class="section-image education"/> -->
             Contact Me
           </div>
           <br />
           <br />
-          <div class="name large bold">
+          <div class="name macro bold">
             James Clow
           </div>
           <div class="greeting">
@@ -547,25 +587,27 @@
             about your next big project!
           </div>
           <div class="contact">
-            <div class="skill-title small">
+            <div class="skill-title small tag">
               Email
             </div>
             <div class="text skill-text">
               James.C.Clow@gmail.com
             </div>
-            <div class="skill-title small">
+            <div class="skill-title small tag">
               Phone
             </div>
             <div class="text skill-text">
               303-475-3944
             </div>
-            <div class="skill-title small">
+            <div class="skill-title small tag">
               Location
             </div>
             <div class="text skill-text">
               Denver, CO
             </div>
           </div>
+          <br />
+          <br />
         </div>
         <div class="next">
           <div class="button-container" @click="$router.push('/projects')">
