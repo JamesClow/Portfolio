@@ -8,6 +8,7 @@
     .limiter { 
       .cover-row { 
         display: flex;
+        padding-top: 80px;
         @media screen and (max-width: 600px){
           flex-direction: column-reverse;
         }
@@ -30,7 +31,7 @@
       }
       .goal-container { 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         @media screen and (max-width: 600px){
           flex-direction: column;
           .column{
@@ -38,6 +39,12 @@
               margin-bottom: 90px;
             }
           }
+        }
+        .column{
+          width: 50%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
         }
         .small-section-title{
           color: $highlight;
@@ -286,6 +293,8 @@
           <div class="company bold macro">
             Juris Futura
           </div>
+          <br />
+          <br />
           <div class="role-title small">
             My Roles
           </div>
@@ -304,60 +313,66 @@
         </div>
       </div>
       <div class="large-summary">
-        <div class="section macro">
-          Juris Futura needed help crafting a digital identity that would make their technology appealing to legal professionals. 
+        <div class="spacer large">
+          Juris Futura needed help creating a digital <br />
+          identity that would make their technology <br />
+          appealing to legal professionals. 
         </div>
       </div>
-      <div class="goal-container section">
-        <div class="deliverable-column column">
-          <div class="small-section-title large bold">
-            Deliverables
-          </div>
-          <br />
-          <div class="description">
-            Brand guidelines website<br /><br />
-            Company and product logos<br /><br />
-            Illustrations and textures<br /><br />
-            Typography<br /><br />
-            Color system<br /><br />
-            UI component library
+      <div class="goal-container spacer">
+        <div class="column">
+          <div class="deliverable-column">
+            <div class="small-section-title large bold">
+              Deliverables
+            </div>
+            <br />
+            <div class="description">
+              Brand guidelines website<br /><br />
+              Company and product logos<br /><br />
+              Illustrations and textures<br /><br />
+              Typography<br /><br />
+              Color system<br /><br />
+              UI component library
+            </div>
           </div>
         </div>
-        <div class="brand-goals-column column">
-          <div class="small-section-title large bold">
-            Brand Goals
-          </div>
-          <br />
-          <div class="process-row">
-            <div class="stage">
-              1
+        <div class="column">
+          <div class="brand-goals-column">
+            <div class="small-section-title large bold">
+              Brand Goals
             </div>
-            <div class="title">
-              Clear & Clean
+            <br />
+            <div class="process-row">
+              <div class="stage">
+                1
+              </div>
+              <div class="title">
+                Clear & Clean
+              </div>
             </div>
-          </div>
-          <br />
-          <div class="process-row">
-            <div class="stage">
-              2
+            <br />
+            <div class="process-row">
+              <div class="stage">
+                2
+              </div>
+              <div class="title">
+                Human-Centered
+              </div>
             </div>
-            <div class="title">
-              Human-Centered
-            </div>
-          </div>
-          <br />
-          <div class="process-row">
-            <div class="stage">
-              3
-            </div>
-            <div class="title">
-              Whimsical
+            <br />
+            <div class="process-row">
+              <div class="stage">
+                3
+              </div>
+              <div class="title">
+                Whimsical
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="limiter section">
+    <div class="limiter spacer">
       <div class="section-container">
         <div class="label">
           Glpyhs
@@ -445,7 +460,7 @@
       </div>
     </div>
     <div class="limiter">
-      <div class="section-container section">
+      <div class="section-container spacer">
         <div class="research-container">
           <div class="section-title macro">
             Research
@@ -472,7 +487,7 @@
         </div>
       </div>
     </div>
-    <div class="limiter section">
+    <div class="limiter spacer">
       <div class="section-container">
         <div class="tool-container">
           <div class="summary-title large">
@@ -490,7 +505,7 @@
         </div>
       </div>
     </div>
-    <div class="limiter section">
+    <div class="limiter spacer">
       <div class="next">
         <div class="button-container" @click="$router.push('/projects/jf-website')">
           <div class="next-label label bold">

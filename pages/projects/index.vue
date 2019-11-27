@@ -124,6 +124,15 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 80px;
+      width: 100%;
+      position: relative;
+      &:hover{
+        .project { 
+          .project-module{
+            opacity: 0.3;
+          }
+        }
+      }
       .squash-enter-active, .squash-leave-active {
         transition: all .5s;
       }
@@ -131,18 +140,31 @@
         opacity: 0;
       }
       .project { 
-        display: flex;
-        align-items: center;
+        width: 100%;
         // margin-bottom: 120px;
-        @media screen and (max-width: 700px){
-          flex-direction: column;
-          align-items: flex-start;
+        // transition: background-color 0.8s ease;
+        .project-module{
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 100%;
-          margin: 40px 0px;
+          transition: transform 0.8s ease, opacity 0.8s ease;
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            opacity: 1;
+          }
+          @media screen and (max-width: 700px){
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin: 40px 0px;
+          }
         }
         .image-container { 
           padding: 20px 0px;
           padding-right: 120px;
+          
           // .image-frame { 
           //   // padding: 25px;
           //   // border: 1px solid #DDD;
@@ -276,17 +298,17 @@
             font-weight: 700;
           }
           .project-title { 
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             font-weight: 700;
             color: $highlight;
             @media screen and (max-width: 1200px){
-              margin-bottom: 15px;
+              // margin-bottom: 15px;
             }
           }
           .roles { 
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             @media screen and (max-width: 1200px){
-              margin-bottom: 15px;
+              // margin-bottom: 15px;
             }
           }
           .learn-more-button { 
@@ -328,158 +350,174 @@
     <div class="project-container">
       <!-- APP DEV -->
       <transition name="squash">
-        <div class="project section-tight" v-show="filter == 'all' || filter == 'develop'">
-          <div class="image-container">
-            <div class="image-frame">
-              <img class="example" src="../../assets/images/projects/jf_dev/ex1.png" />
-            </div>
-          </div>
-          <div class="description-container">
-            <div class="company-name large">
-              Development
-            </div>
-            <div class="project-title large">
-              Juris Futura
-            </div>
-            <div class="roles">
-              <div class="role-title small">
-                My Roles
-              </div>
-              <div class="role">
-                Front-End Developer
-              </div>
-              <div class="role">
-                UI & UX Designer
+        <div class="project spacer-tight" v-show="filter == 'all' || filter == 'develop'" @click="$router.push('projects/jf-app-dev')">
+          <!-- <div class="background"></div> -->
+          <div class="project-module">
+            <div class="image-container">
+              <div class="image-frame">
+                <img class="example" src="../../assets/images/projects/jf_dev/ex1.png" />
               </div>
             </div>
-            <div class="button" @click="$router.push('projects/jf-app-dev')">
-              Learn More
+            <div class="description-container">
+              <div class="company-name large">
+                Development
+              </div>
+              <div class="project-title large">
+                Juris Futura
+              </div>
+              <br />
+              <div class="roles">
+                <div class="role-title small">
+                  My Roles
+                </div>
+                <div class="role">
+                  Front-End Developer
+                </div>
+                <div class="role">
+                  UI & UX Designer
+                </div>
+              </div>
+              <!-- <div class="button" @click="$router.push('projects/jf-app-dev')">
+                Learn More
+              </div> -->
             </div>
           </div>
         </div>
       </transition>
       <!-- BRANDING -->
       <transition name="squash">
-        <div class="project section-tight" v-show="filter == 'all' || filter == 'design'">
-          <div class="image-container">
-            <img class="assist" src="../../assets/images/projects/jf_branding/assist-01.svg" />
-          </div>
-          <div class="description-container">
-            <div class="company-name large">
-              Branding
+        <div class="project spacer-tight" v-show="filter == 'all' || filter == 'design'" @click="$router.push('/projects/jf-branding')">
+          <div class="project-module">
+            <div class="image-container">
+              <img class="assist" src="../../assets/images/projects/jf_branding/assist-01.svg" />
             </div>
-            <div class="project-title large">
-              Juris Futura
-            </div>
-            <div class="roles">
-              <div class="role-title small">
-                My Roles
+            <div class="description-container">
+              <div class="company-name large">
+                Branding
               </div>
-              <div class="role">
-                Creative Director
+              <div class="project-title large">
+                Juris Futura
               </div>
-              <div class="role">
-                Illustrator
+              <br />
+              <div class="roles">
+                <div class="role-title small">
+                  My Roles
+                </div>
+                <div class="role">
+                  Branding
+                </div>
+                <div class="role">
+                  Graphic Design
+                </div>
+                <div class="role">
+                  Illustrations
+                </div>
               </div>
-              <div class="role">
-                Designer
-              </div>
-            </div>
-            <div class="button" @click="$router.push('/projects/jf-branding')">
-              Learn More
+              <!-- <div class="button" @click="$router.push('/projects/jf-branding')">
+                Learn More
+              </div> -->
             </div>
           </div>
         </div>
       </transition>
       <!-- WEBSITE -->
       <transition name="squash">
-        <div class="project section-tight" v-show="filter == 'all' || filter == 'develop' || filter == 'design'">
-          <div class="image-container">
-            <div class="image-frame">
-              <img class="website" src="../../assets/images/projects/jf_web/home_page.png" />
-            </div>
-          </div>
-          <div class="description-container">
-            <div class="company-name large">
-              Website
-            </div>
-            <div class="project-title large">
-              Juris Futura
-            </div>
-            <div class="roles">
-              <div class="role-title small">
-                My Roles
-              </div>
-              <div class="role">
-                Front-End Developer
-              </div>
-              <div class="role">
-                UI & UX Designer
+        <div class="project spacer-tight" v-show="filter == 'all' || filter == 'develop' || filter == 'design'" @click="$router.push('/projects/jf-website')">
+          <div class="project-module">
+            <div class="image-container">
+              <div class="image-frame">
+                <img class="website" src="../../assets/images/projects/jf_web/home_page.png" />
               </div>
             </div>
-            <div class="button" @click="$router.push('/projects/jf-website')">
-              Learn More
+            <div class="description-container">
+              <div class="company-name large">
+                Website
+              </div>
+              <div class="project-title large">
+                Juris Futura
+              </div>
+              <br />
+              <div class="roles">
+                <div class="role-title small">
+                  My Roles
+                </div>
+                <div class="role">
+                  Front-End Developer
+                </div>
+                <div class="role">
+                  UI & UX Designer
+                </div>
+              </div>
+              <!-- <div class="button" @click="$router.push('/projects/jf-website')">
+                Learn More
+              </div> -->
             </div>
           </div>
         </div>
       </transition>
       <!-- CITY -->
       <transition name="squash">
-        <div class="project section-tight" v-show="filter == 'all' || filter == 'design'">
-          <div class="image-container">
-            <div class="globe-frame">
-              <img class="globe" src="../../assets/images/projects/city/sample.png" />
-            </div>
-          </div>
-          <div class="description-container">
-            <div class="company-name large">
-              Installation
-            </div>
-            <div class="project-title large">
-              Under The Moon
-            </div>
-            <div class="roles">
-              <div class="role-title small">
-                My Roles
-              </div>
-              <div class="role">
-                Visual Designer
-              </div>
-              <div class="role">
-                Projectionist 
+        <div class="project spacer-tight" v-show="filter == 'all' || filter == 'design'" @click="$router.push('/projects/under-the-moon')">
+          <div class="project-module">
+            <div class="image-container">
+              <div class="globe-frame">
+                <img class="globe" src="../../assets/images/projects/city/sample.png" />
               </div>
             </div>
-            <div class="button" @click="$router.push('/projects/under-the-moon')">
-              Learn More
+            <div class="description-container">
+              <div class="company-name large">
+                Installation
+              </div>
+              <div class="project-title large">
+                Under The Moon
+              </div>
+              <br />
+              <div class="roles">
+                <div class="role-title small">
+                  My Roles
+                </div>
+                <div class="role">
+                  Visual Designer
+                </div>
+                <div class="role">
+                  Projectionist 
+                </div>
+              </div>
+              <!-- <div class="button" @click="$router.push('/projects/under-the-moon')">
+                Learn More
+              </div> -->
             </div>
           </div>
         </div>
       </transition>
       <!-- COLORS -->
       <transition name="squash">
-        <div class="project section-tight" v-show="filter == 'all' || filter == 'develop'">
-          <div class="image-container">
-            <div class="image-frame">
-              <img class="colors" src="../../assets/images/projects/colors/Color_Samples.jpg" />
-            </div>
-          </div>
-          <div class="description-container">
-            <div class="company-name large">
-              Development
-            </div>
-            <div class="project-title large">
-              Color In Sound
-            </div>
-            <div class="roles">
-              <div class="role-title small">
-                My Roles
-              </div>
-              <div class="role">
-                Personal Project
+        <div class="project spacer-tight" v-show="filter == 'all' || filter == 'develop'" @click="$router.push('/projects/color-in-sound')">
+          <div class="project-module">
+            <div class="image-container">
+              <div class="image-frame">
+                <img class="colors" src="../../assets/images/projects/colors/Color_Samples.jpg" />
               </div>
             </div>
-            <div class="button" @click="$router.push('/projects/color-in-sound')">
-              Learn More
+            <div class="description-container">
+              <div class="company-name large">
+                Development
+              </div>
+              <div class="project-title large">
+                Color In Sound
+              </div>
+              <br />
+              <div class="roles">
+                <div class="role-title small">
+                  My Roles
+                </div>
+                <div class="role">
+                  Personal Project
+                </div>
+              </div>
+              <!-- <div class="button" @click="$router.push('/projects/color-in-sound')">
+                Learn More
+              </div> -->
             </div>
           </div>
         </div>

@@ -491,7 +491,7 @@
             <img class="github" src="../../assets/images/Github.png" />
           </div>
         </div> -->
-        <div class="section">
+        <div class="spacer">
           <div class="summary-title large">
             Tools
           </div>
@@ -505,13 +505,15 @@
             </span>
           </div>
         </div>
-        <div class="next section">
-          <div class="button-container" @click="$router.push('/projects/jf-app-dev')">
-            <div class="next-label label">
-              Next Project
-            </div>
-            <div class="project-label large bold">
-              Development - Juris Futura
+        <div class="spacer">
+          <div class="next">
+            <div class="button-container" @click="$router.push('/projects/jf-app-dev')">
+              <div class="next-label label">
+                Next Project
+              </div>
+              <div class="project-label large bold">
+                Development - Juris Futura
+              </div>
             </div>
           </div>
         </div>

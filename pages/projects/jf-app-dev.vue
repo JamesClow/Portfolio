@@ -113,14 +113,12 @@
           </div>
           <br />
           <br />
-          <div class="role-title small bold">
+          <div class="role-title small">
             My Roles
           </div>
-          <br />
           <div class="role">
             Front End Developer
           </div>
-          <br />
           <div class="role">
             UI / UX Design
           </div>
@@ -128,7 +126,7 @@
       </div>
     </div>
     <div class="limiter">
-      <div class="product-row section">
+      <div class="product-row spacer">
         <div class="image-row">
           <img class="project-1" src="../../assets/images/projects/jf_dev/ex1.png" />
         </div>
@@ -142,16 +140,16 @@
         </div>
       </div>
     </div>
-    <div class="guid-container section">
+    <div class="guid-container spacer">
       <div class="large-summary">
-        <div class="macro summary">
+        <div class="large summary">
           I designed and built large scale web<br />
           applications to assist legal professionals<br />
           with various types of automation.
         </div>
       </div>
     </div>
-    <div class="guid-container limiter-narrow section">
+    <div class="guid-container limiter-narrow spacer">
       <div class="small-section-title center-text large bold highlight">
         Guiding Principles
       </div>
@@ -215,7 +213,7 @@
       </div>
     </div>
     <div class="limiter">
-      <div class="product-row section">
+      <div class="product-row spacer">
         <div class="image-row">
           <img class="project-1" src="../../assets/images/projects/jf_dev/ex4.png" />
         </div>
@@ -226,7 +224,7 @@
         </div>
       </div>
     </div>
-    <div class="limiter section">
+    <div class="limiter spacer">
       <div class="summary-title large">
         Differing Mindsets
       </div>
@@ -259,7 +257,7 @@
         </div>
       </div>
     </div>
-    <div class="section summary limiter">
+    <div class="spacer summary limiter">
       <div class="summary-title large">
         Focus Areas
       </div>
@@ -289,7 +287,7 @@
       </div>
     </div>
     <div class="limiter">
-      <div class="product-row section">
+      <div class="product-row spacer">
         <div class="image-row">
           <div class="image-container">
             <img class="three" src="../../assets/images/projects/jf_dev/ex8.png" />
@@ -303,7 +301,7 @@
         </div>
       </div>
     </div>
-    <div class="limiter section">
+    <div class="limiter spacer">
       <div class="summary-title large">
         Tools
       </div>
@@ -341,13 +339,15 @@
         </span>
       </div>
     </div>
-    <div class="next limiter section">
-      <div class="button-container" @click="$router.push('/projects/jf-branding')">
-        <div class="next-label label bold">
-          Next Project
-        </div>
-        <div class="project-label small-section-title large">
-          Branding - Juris Futura
+    <div class="limiter spacer">
+      <div class="next">
+        <div class="button-container" @click="$router.push('/projects/jf-branding')">
+          <div class="next-label label bold">
+            Next Project
+          </div>
+          <div class="project-label small-section-title large bold">
+            Branding - Juris Futura
+          </div>
         </div>
       </div>
     </div>

@@ -115,17 +115,16 @@
           <div class="company bold macro">
             Juris Futura
           </div>
+          <br />
+          <br />
           <div class="role-title small">
             My Roles
           </div>
           <div class="role">
-            Branding
+            Front-End Developer
           </div>
           <div class="role">
-            Graphic Design
-          </div>
-          <div class="role">
-            Illustrations
+            UI & UX Designer
           </div>
         </div>
         <div class="image-container">
@@ -136,7 +135,7 @@
       </div>
     </div>
     <div class="limiter">
-      <div class="large-summary macro section">
+      <div class="large-summary large spacer">
         I helped Juris Futura design and <br />
         develop a website that showcased <br />
         our new products. 
@@ -144,7 +143,7 @@
     </div>
     <div class="pages">
       <div class="limiter">
-        <div class="side-by-side section">
+        <div class="side-by-side spacer">
           <div class="content left">
             <div class="summary-title large">
               Objective
@@ -160,7 +159,7 @@
         </div>
       </div>
       <div class="limiter">
-        <div class="side-by-side section">
+        <div class="side-by-side spacer">
           <div class="page-container">
             <img src="../../assets/images/projects/jf_web/juvo_page_full.png" />
           </div>
@@ -246,7 +245,7 @@
     </div>
     <div class="limiter-narrow">
       <div class="mini-col">
-        <div class="section">
+        <div class="spacer">
           <div class="summary-title large">
             Challenge
           </div>
@@ -255,7 +254,7 @@
             The biggest challenge in developing this project was figuring out what information to reveal and how to communicate the message. This process was especially challenging because many stakeholders had conflicting opinions about how to word each statement.
           </div>
         </div>
-        <div class="section">
+        <div class="spacer">
           <div class="summary-title large">
             Solution
           </div>
@@ -267,7 +266,7 @@
       </div>
     </div>
     <div class="limiter-narrow">
-      <div class="section">
+      <div class="spacer">
         <div class="summary-title large">
           Tools
         </div>
@@ -294,8 +293,8 @@
         </div>
       </div>
     </div>
-    <div class="limiter">
-      <div class="next section">
+    <div class="limiter spacer">
+      <div class="next">
         <div class="button-container" @click="$router.push('/projects/under-the-moon')">
           <div class="next-label label">
             Next Project

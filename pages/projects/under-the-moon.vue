@@ -263,7 +263,7 @@
     <div class="reel-mobile"></div>
     <div class="summary">
       <div class="summary-col limiter">
-        <div class="section">
+        <div class="spacer">
           <div class="small-section-title large bold">
             Summary
           </div>
@@ -272,7 +272,7 @@
             Under The Moon was an experimental art installation developed in collaboration with Sommer Shearer, Greg Hardie, and Travis Powell. The project consisted of two parts. The first was a performance piece that debuted on May 29th, 2015, at the Shwayder Art Museum in Denver. The second was a looped experience exhibited in the same space for the following two days. The goal of this project was to create an immersive and unique experience using cutting edge digital practices.
           </div>
         </div>
-        <div class="section">
+        <div class="spacer">
           <div class="small-section-title large bold">
             Challenges
           </div>
@@ -293,25 +293,27 @@
           </div>
           <img src="~/assets/images/projects/city/Audio_SideView.png" />
         </div>
-        <div class="demo-row section">
+        <div class="demo-row spacer">
           <div class="desciption bold">
             Production Demo
           </div>
           <video id="ball" src="~/assets/images/projects/city/DEMO.mp4" controls></video>
         </div>
-        <div class="demo-row section">
+        <div class="demo-row spacer">
           <div class="desciption bold">
             Tech Demo
           </div>
           <video id="ball" src="~/assets/images/projects/city/DEMO_2.mp4" controls></video>
         </div>
-        <div class="next section">
-          <div class="button-container" @click="$router.push('/projects/color-in-sound')">
-            <div class="next-label label">
-              Next Project
-            </div>
-            <div class="project-label small-section-title large bold">
-              App - Color In Sound
+        <div class="spacer">
+          <div class="next">
+            <div class="button-container" @click="$router.push('/projects/color-in-sound')">
+              <div class="next-label label">
+                Next Project
+              </div>
+              <div class="project-label small-section-title large bold">
+                App - Color In Sound
+              </div>
             </div>
           </div>
         </div>

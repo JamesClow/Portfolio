@@ -75,12 +75,14 @@
       .scrolling-container{
         // padding-right: 22%;
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 40px;
         @media screen and (min-width: 1800px){
           padding-top: 190px;
+          padding-bottom: 60px;
         }
         @media screen and (max-width: 1000px){
           padding-top: 90px;
+          padding-bottom: 30px;
         }
         @media screen and (max-width: 900px){
           padding: 90px 12% 50px 12%;
@@ -123,7 +125,7 @@
           // padding: 0px 60px;
           padding-left: 30px;
           padding-right: 30px;
-          border-top: 1px solid #DDD;
+          border-top: 2px solid #DDD;
           .resume-title { 
             display: flex;
             align-items: center;
@@ -284,7 +286,7 @@
             </div>
           </div>
         </div> -->
-        <div class="welcome-message large">
+        <div class="welcome-message macro">
           I love combining technology,  <br />
           art and psychology. Together  <br />
           they make something magical.
@@ -358,8 +360,7 @@
         <br />
         <div class="experience resume-section">
           <br />
-          <br />
-          <div class="resume-title list">
+          <div class="resume-title list tag">
             <!-- <img src="../assets/images/data.svg" class="section-image education"/> -->
             Experiences
           </div>
@@ -453,8 +454,7 @@
         <br />
         <div class="experience resume-section">
           <br />
-          <br />
-          <div class="resume-title">
+          <div class="resume-title tag">
             <!-- <img src="../assets/images/education.svg" class="section-image education "/> -->
             Education
           </div>
@@ -483,8 +483,7 @@
         <br />
         <div class="fav-tools resume-section">
           <br />
-          <br />
-          <div class="resume-title">
+          <div class="resume-title tag">
             <!-- <img src="../assets/images/design.svg" class="section-image education"/> -->
             Favorite Tools
           </div>
@@ -572,10 +571,9 @@
         <br />
         <div class="contact-container resume-section">
           <br />
-          <br />
-          <div class="resume-title">
+          <div class="resume-title tag">
             <!-- <img src="../assets/images/computer.svg" class="section-image education"/> -->
-            Contact Me
+            Contact Info
           </div>
           <br />
           <br />
@@ -608,6 +606,7 @@
           </div>
           <br />
           <br />
+          <br />
         </div>
         <div class="next">
           <div class="button-container" @click="$router.push('/projects')">
@@ -619,6 +618,7 @@
             </div>
           </div>
         </div>
+        <br />
       </div>
     </div>
   </div>

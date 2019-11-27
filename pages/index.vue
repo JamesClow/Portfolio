@@ -164,9 +164,10 @@
             box-shadow: $z_depth_1;
             width: 450px;
             overflow: hidden;
-            transition: box-shadow 0.4s ease;
+            transition: box-shadow 0.4s ease, transform 0.4s ease;
             &:hover{
-              box-shadow: $z_depth_2;
+              transform: scale(1.025);
+              // box-shadow: $z_depth_2;
               cursor: pointer;
             }
             @media screen and (min-width: 1800px){
@@ -256,7 +257,7 @@
       <div class="scroll-icon"></div>
     </div>
     <div class="limiter-container">
-      <div class="limiter section">
+      <div class="limiter spacer">
         <div class="row">
           <div class="col about">
             <div class="label bold regular">
@@ -337,7 +338,7 @@
       </div>
     </div>
     <div class="footer limiter-container">
-      <div class="limiter row section">
+      <div class="limiter row spacer">
         <div class="col">
           <div class="my-name macro bold">
             James Clow
@@ -371,12 +372,15 @@
               <div class="label-small bold">
                 Pages
               </div>
+              <br />
               <div class="link" @click="$router.push({ name: 'projects' })">
                 Projects
               </div>
+              <br />
               <div class="link" @click="$router.push({ name: 'about' })">
                 About
               </div>
+              <br />
               <div class="link" @click="$router.push({ name: 'studio' })">
                 Studio
               </div>
@@ -385,18 +389,23 @@
               <div class="label-small bold">
                 Projects
               </div>
+              <br />
               <div class="link" @click="$router.push('projects/jf-app-dev')">
                 JF - App Dev
               </div>
+              <br />
               <div class="link" @click="$router.push('projects/jf-branding')">
                 JF - Branding
               </div>
+              <br />
               <div class="link" @click="$router.push('projects/jf-website')">
                 JF - Website
               </div>
+              <br />
               <div class="link" @click="$router.push('projects/under-the-moon')">
                 Under The Moon
               </div>
+              <br />
               <div class="link" @click="$router.push('projects/color-in-sound')">
                 Color in Sound
               </div>
@@ -405,15 +414,19 @@
               <div class="label-small bold">
                 Made With
               </div>
+              <br />
               <div class="link" @click="openLink('https://vuejs.org')">
                 Vue.js
               </div>
+              <br />
               <div class="link" @click="openLink('https://nuxtjs.org')">
                 Nuxt.js
               </div>
+              <br />
               <div class="link" @click="openLink('https://greensock.com/')">
                 Green Sock
               </div>
+              <br />
               <div class="link" @click="openLink('https://alvarotrigo.com/fullPage/')">
                 Fullpage.js
               </div>
