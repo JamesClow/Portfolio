@@ -49,6 +49,27 @@
     // position: absolute;
     // top: 0px;
     // left: 0px;
+    &.dark{
+      #home-icon .dark{
+        display: none;
+      }
+      #home-icon .light{
+        display: block;
+      }
+      #nav-icon.expanded .nav-container .route{
+        color: #FFF;
+      }
+      #nav-icon .nav-container .route{
+        background-color: #FFF;
+      }
+      .nav{
+        color: #FFF;
+      }
+      .banner{
+        background-color: #000;
+        opacity: 0.6;
+      }
+    }
     #home-icon{
       position: fixed;
       top: 50px;
@@ -58,6 +79,9 @@
       &:hover{
         cursor: pointer;
         transform: scale(1.05);
+      }
+      .light{
+        display: none;
       }
       img{
         height: 25px;
@@ -339,6 +363,7 @@
       background-color: #FFF;
       opacity: 0.9;
       z-index: 4;
+      transition: background-color 1s ease;
       @media screen and (max-width: 580px){
         height: 50px;
       }
@@ -359,9 +384,10 @@
 </style>
 
 <template>
-  <div id="app">
+  <div id="app" :class="{'dark': urlContains('under-the-moon')}">
     <div id="home-icon" @click="loadRoute('index')">
-      <img src="~assets/images/jc-logo.svg" />
+      <img class="dark" src="~assets/images/jc-logo.svg" />
+      <img class="light" src="~assets/images/jc-logo-light.svg" />
     </div>
     <no-ssr>
       <div id="nav-icon" :class="{[nav_state]: true, 'nav-hover': nav_hover}">
