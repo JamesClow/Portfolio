@@ -60,8 +60,8 @@
           font-family: impact, sans-serif;
         }
         video {
-          -webkit-clip-path: url(#clip);
-          clip-path: url(#clip);
+          clip-path: circle(50% at 50% 50%);
+          -webkit-clip-path: circle(50% at 50% 50%);
           width: 500px;
           height: 500px;
           z-index: 1;
@@ -270,19 +270,16 @@
       </div>
       <div class="video-container">
         <!-- <img class="globe" src="../../assets/images/projects/city/sample.png" /> -->
-        
-        <svg style="opacity:0;position:fixed;z-index:-999" viewBox="0 0 1 1">
+        <!-- <svg style="opacity:0;position:fixed;z-index:-999" viewBox="0 0 1 1">
           <defs>
             <clipPath id="clip" clipPathUnits="objectBoundingBox">
               <circle cx="0.5" cy="0.5" r="0.49"/>
             </clipPath>
           </defs>
-          
-        </svg>
-        <video autoplay playsinline muted loop preload poster="~/assets/images/projects/city/sample.png">
+        </svg> -->
+        <video autoplay playsinline muted loop preload poster="images/globeTemp.png">
           <source src="~/assets/images/projects/city/globe_1.mp4" />
         </video>
-        
       </div>
     </div>
     <div class="reel">

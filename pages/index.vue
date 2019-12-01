@@ -371,7 +371,7 @@
   <div id="home-page">
     <div class="front-page">
       <div class="welcome-container">
-        <img class="profile-pic" src="../assets/images/profile_pic_small.png"/>
+        <img class="profile-pic" src="../assets/images/profile_pic_small.jpg"/>
         <div class="welcome mega">
           <span class="hi bold">Hello,</span> I’m James. I create<br />
           intuitive digital products.

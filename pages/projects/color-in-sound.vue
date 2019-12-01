@@ -704,7 +704,7 @@
           Samples
         </div>
         <br />
-        <img class="samples" src="../../assets/images/projects/colors/SampleSet.jpg"/>
+        <img class="samples" src="../../assets/images/projects/colors/SampleSet.png"/>
         <!-- <div class="git-container">
           <div class="git">
             <img class="github" src="../../assets/images/Github.png" />
