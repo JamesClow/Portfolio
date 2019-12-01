@@ -271,6 +271,7 @@
             .colors{
               width: 320px;
               height: 180px;
+              border-radius: 5px;
             }
           }
           @media screen and (max-width: 480px){

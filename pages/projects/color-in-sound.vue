@@ -7,16 +7,16 @@
       height: 100vh;
       z-index: -1;
       @media screen and (max-width: 1430px){
-        height: 50vh;
+        height: 100vw;
       }
-      @media screen and (max-width: 760px){
-        height: 40vh;
+      @media screen and (max-width: 800px){
+        height: 100vw;
       }
       @media screen and (max-width: 580px){
-        height: 30vh;
+        height: 100vw;
       }
       @media screen and (max-width: 450px){
-        height: 25vh;
+        height: 100vw;
       }
       &.cover-image{
         position: fixed;
@@ -40,62 +40,62 @@
       z-index: 2;
     }
     @keyframes slides {
-      6%, 16%{
+      0%, 10%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_1.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_2.jpg');
       }
-      22%, 32%{
+      16%, 26%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_2.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_3.jpg');
       }
-      38%, 48%{
+      32%, 42%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_3.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_4.jpg');
       }
-      54%, 64%{
+      48%, 58%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_4.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_5.jpg');
       }
-      70%, 80%{
+      64%, 74%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_5.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
-      86%, 92%{
+      80%, 90%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
     }
     @-moz-keyframes slides {
-      6%, 16%{
+      0%, 10%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_1.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_2.jpg');
       }
-      22%, 32%{
+      16%, 26%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_2.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_3.jpg');
       }
-      38%, 48%{
+      32%, 42%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_3.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_4.jpg');
       }
-      54%, 64%{
+      48%, 58%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_4.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_5.jpg');
       }
-      70%, 80%{
+      64%, 74%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_5.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
-      86%, 92%{
+      80%, 90%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
     }
     @-webkit-keyframes slides {
-      6%, 16%{
+      0%, 10%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_1.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_2.jpg');
       }
-      22%, 32%{
+      16%, 26%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_2.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_3.jpg');
       }
-      38%, 48%{
+      32%, 42%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_3.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_4.jpg');
       }
-      54%, 64%{
+      48%, 58%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_4.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_5.jpg');
       }
-      70%, 80%{
+      64%, 74%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_5.jpg'), url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
-      86%, 92%{
+      80%, 90%{
         background-image: url('../../assets/images/projects/colors/Color_To_Audio_6.jpg');
       }
     }
@@ -116,62 +116,62 @@
         -webkit-animation: colors 20s linear infinite;
       }
       @keyframes colors {
-        6%, 16%{
+        0%, 10%{
           color: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           color: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           color: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           color: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           color: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           color: #9d7fc7;
         }
       }
       @-moz-keyframes colors {
-        6%, 16%{
+        0%, 10%{
           color: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           color: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           color: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           color: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           color: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           color: #9d7fc7;
         }
       }
       @-webkit-keyframes colors {
-        6%, 16%{
+        0%, 10%{
           color: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           color: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           color: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           color: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           color: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           color: #9d7fc7;
         }
       }
@@ -194,62 +194,62 @@
 
       }
       @keyframes fill {
-        6%, 16%{
+        0%, 10%{
           fill: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           fill: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           fill: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           fill: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           fill: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           fill: #9d7fc7;
         }
       }
       @-moz-keyframes fill {
-        6%, 16%{
+        0%, 10%{
           fill: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           fill: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           fill: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           fill: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           fill: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           fill: #9d7fc7;
         }
       }
       @-webkit-keyframes fill {
-        6%, 16%{
+        0%, 10%{
           fill: #6fbcd0;
         }
-        22%, 32%{
+        16%, 26%{
           fill: #73d3c7;
         }
-        38%, 48%{
+        32%, 42%{
           fill: #94c67f;
         }
-        54%, 64%{
+        48%, 58%{
           fill: #d4be73;
         }
-        70%, 80%{
+        64%, 74%{
           fill: #d27772;
         }
-        86%, 92%{
+        80%, 90%{
           fill: #9d7fc7;
         }
       }
@@ -353,25 +353,22 @@
                 
               }
               @keyframes spin {
-                0%{
+                0%, 10%{
                   transform: rotateZ(0deg);
                 }
-                6%, 16%{
-                  transform: rotateZ(0deg);
-                }
-                22%, 32%{
+                16%, 26%{
                   transform: rotateZ(-45deg);
                 }
-                38%, 48%{
+                32%, 42%{
                   transform: rotateZ(-85deg);
                 }
-                54%, 64%{
+                48%, 58%{
                   transform: rotateZ(-175deg);
                 }
-                70%, 80%{
+                64%, 74%{
                   transform: rotateZ(-265deg);
                 }
-                86%, 92%{
+                80%, 90%{
                   transform: rotateZ(-320deg);
                 }
                 100%{
@@ -379,25 +376,22 @@
                 }
               }
               @-moz-keyframes spin {
-                0%{
+                0%, 10%{
                   transform: rotateZ(0deg);
                 }
-                6%, 16%{
-                  transform: rotateZ(0deg);
-                }
-                22%, 32%{
+                16%, 26%{
                   transform: rotateZ(-45deg);
                 }
-                38%, 48%{
+                32%, 42%{
                   transform: rotateZ(-85deg);
                 }
-                54%, 64%{
+                48%, 58%{
                   transform: rotateZ(-175deg);
                 }
-                70%, 80%{
+                64%, 74%{
                   transform: rotateZ(-265deg);
                 }
-                86%, 92%{
+                80%, 90%{
                   transform: rotateZ(-320deg);
                 }
                 100%{
@@ -405,25 +399,22 @@
                 }
               }
               @-webkit-keyframes spin {
-                0%{
+                0%, 10%{
                   transform: rotateZ(0deg);
                 }
-                6%, 16%{
-                  transform: rotateZ(0deg);
-                }
-                22%, 32%{
+                16%, 26%{
                   transform: rotateZ(-45deg);
                 }
-                38%, 48%{
+                32%, 42%{
                   transform: rotateZ(-85deg);
                 }
-                54%, 64%{
+                48%, 58%{
                   transform: rotateZ(-175deg);
                 }
-                70%, 80%{
+                64%, 74%{
                   transform: rotateZ(-265deg);
                 }
-                86%, 92%{
+                80%, 90%{
                   transform: rotateZ(-320deg);
                 }
                 100%{
@@ -431,62 +422,62 @@
                 }
               }
               @keyframes triangle {
-                6%, 16%{
+                0%, 10%{
                   background-image: url('../../assets/images/projects/colors/triangle_1.png'), url('../../assets/images/projects/colors/triangle_2.png');
                 }
-                22%, 32%{
+                16%, 26%{
                   background-image: url('../../assets/images/projects/colors/triangle_2.png'), url('../../assets/images/projects/colors/triangle_3.png');
                 }
-                38%, 48%{
+                32%, 42%{
                   background-image: url('../../assets/images/projects/colors/triangle_3.png'), url('../../assets/images/projects/colors/triangle_4.png');
                 }
-                54%, 64%{
+                48%, 58%{
                   background-image: url('../../assets/images/projects/colors/triangle_4.png'), url('../../assets/images/projects/colors/triangle_5.png');
                 }
-                70%, 80%{
+                64%, 74%{
                   background-image: url('../../assets/images/projects/colors/triangle_5.png'), url('../../assets/images/projects/colors/triangle_6.png');
                 }
-                86%, 92%{
+                80%, 90%{
                   background-image: url('../../assets/images/projects/colors/triangle_6.png');
                 }
               }
               @-moz-keyframes triangle {
-                6%, 16%{
+                0%, 10%{
                   background-image: url('../../assets/images/projects/colors/triangle_1.png'), url('../../assets/images/projects/colors/triangle_2.png');
                 }
-                22%, 32%{
+                16%, 26%{
                   background-image: url('../../assets/images/projects/colors/triangle_2.png'), url('../../assets/images/projects/colors/triangle_3.png');
                 }
-                38%, 48%{
+                32%, 42%{
                   background-image: url('../../assets/images/projects/colors/triangle_3.png'), url('../../assets/images/projects/colors/triangle_4.png');
                 }
-                54%, 64%{
+                48%, 58%{
                   background-image: url('../../assets/images/projects/colors/triangle_4.png'), url('../../assets/images/projects/colors/triangle_5.png');
                 }
-                70%, 80%{
+                64%, 74%{
                   background-image: url('../../assets/images/projects/colors/triangle_5.png'), url('../../assets/images/projects/colors/triangle_6.png');
                 }
-                86%, 92%{
+                80%, 90%{
                   background-image: url('../../assets/images/projects/colors/triangle_6.png');
                 }
               }
               @-webkit-keyframes triangle {
-                6%, 16%{
+                0%, 10%{
                   background-image: url('../../assets/images/projects/colors/triangle_1.png'), url('../../assets/images/projects/colors/triangle_2.png');
                 }
-                22%, 32%{
+                16%, 26%{
                   background-image: url('../../assets/images/projects/colors/triangle_2.png'), url('../../assets/images/projects/colors/triangle_3.png');
                 }
-                38%, 48%{
+                32%, 42%{
                   background-image: url('../../assets/images/projects/colors/triangle_3.png'), url('../../assets/images/projects/colors/triangle_4.png');
                 }
-                54%, 64%{
+                48%, 58%{
                   background-image: url('../../assets/images/projects/colors/triangle_4.png'), url('../../assets/images/projects/colors/triangle_5.png');
                 }
-                70%, 80%{
+                64%, 74%{
                   background-image: url('../../assets/images/projects/colors/triangle_5.png'), url('../../assets/images/projects/colors/triangle_6.png');
                 }
-                86%, 92%{
+                80%, 90%{
                   background-image: url('../../assets/images/projects/colors/triangle_6.png');
                 }
               }
