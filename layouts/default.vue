@@ -124,19 +124,19 @@
             }
           }
           .nav{
-            width: 300px;
+            width: 250px;
             height: 75px;
             // background-color: rgba(0,0,0,0.2);
             // border: 1px solid red;
-            right: calc(90px - 60px);
+            right: 65px;
             &:hover{
               cursor: pointer;
             }
             &:hover ~ .route{
               // color: $highlight;
               // text-decoration: line-through;
-
-              transform: translateX(-8px);
+              color: $highlight;
+              transform: translateX(-4px) scale(1.05);
               
               // &.active::after{
               //   background-color: $highlight;
@@ -212,7 +212,9 @@
             }
             &:hover ~ .route{
               &:not(.active){
-                transform: translateY(-5px);
+                // transform: translateY(-5px);
+                transform: scale(1.05);
+                color: $highlight;
               }
             }
             &.nav-1{

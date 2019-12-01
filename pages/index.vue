@@ -137,17 +137,19 @@
               color: $highlight;
       			}
       			.what-i-do { 
-      				margin-bottom: 60px;
+      				// margin-bottom: 60px;
       			}
 
       			.row { 
-              margin-bottom: 60px;
+              // margin-bottom: 60px;
               @media screen and (max-width: 760px){
                 margin-bottom: 0px;
               }
       				.col { 
                 @media screen and (max-width: 760px){
-                  margin-bottom: 60px;
+                  &:not(:last-child){
+                    margin-bottom: 40px;
+                  }
                 }
       					.label { 
 
@@ -255,10 +257,6 @@
           }
       	}
         .tag-line{
-          margin-top: 120px;
-          @media screen and (max-width: 1200px){
-            margin-top: 80px;
-          }
           .bold{
             color: $highlight;
           }
@@ -284,19 +282,23 @@
       <div class="limiter spacer">
         <div class="row">
           <div class="col about">
-            <div class="label bold large">
+            <div class="highlight bold large">
               What I do
             </div>
+            <br />
             <div class="what-i-do large">
               I enjoy creating memorable<br />
               experiences and working<br />
               with passionate people.
             </div>
+            <br />
+            <br />
             <div class="row">
               <div class="col">
-                <div class="label bold regular">
+                <div class="highlight bold regular">
                   UI / UX
                 </div>
+                <br />
                 Web Development<br />
                 <br />
                 Prototyping<br />
@@ -310,9 +312,10 @@
                 Animation<br />
               </div>
               <div class="col">
-                <div class="label bold regular">
+                <div class="highlight bold regular">
                   Branding
                 </div>
+                <br />
                 Logos<br />
                 <br />
                 Illustrations<br />
@@ -322,14 +325,17 @@
                 Strategy<br />
               </div>
             </div>
+            <br />
+            <br />
             <div class="button" @click="$router.push({ name: 'about' })">
               More About Me
             </div>
           </div>
           <div class="col projects">
-            <div class="label bold large">
+            <div class="highlight bold large">
               Featured Project
             </div>
+            <br />
             <div class="product-botton" @click="$router.push('projects/jf-app-dev')">
               <div class="header">
                 <img src="../assets/images/projects/jf_branding/futura_horizontal_white_red.svg" />
@@ -355,6 +361,10 @@
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="tag-line macro">
           Let’s make something <span class="bold">amazing!</span>
         </div>
