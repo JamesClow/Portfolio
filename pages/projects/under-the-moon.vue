@@ -127,11 +127,53 @@
       width: 100%;
       height: 70vw;
       display: none;
+      animation: reel 26s linear infinite;
+      -moz-animation: reel 26s linear infinite;
       -webkit-animation: reel 26s linear infinite;
       background-size: cover;
       background-position: center;
       @media screen and (max-width: 760px){
         display: block;
+      }
+    }
+    @keyframes reel {
+      6%, 16%{
+        background-image: url('../../assets/images/projects/city/city_2.jpg'), url('../../assets/images/projects/city/people_5.jpg');
+      }
+      22%, 32%{
+        background-image: url('../../assets/images/projects/city/people_5.jpg'), url('../../assets/images/projects/city/people_4.jpg');
+      }
+      38%, 48%{
+        background-image: url('../../assets/images/projects/city/people_4.jpg'), url('../../assets/images/projects/city/full_view_4.jpg');
+      }
+      54%, 64%{
+        background-image: url('../../assets/images/projects/city/full_view_4.jpg'), url('../../assets/images/projects/city/desk.jpg');
+      }
+      70%, 80%{
+        background-image: url('../../assets/images/projects/city/desk.jpg'), url('../../assets/images/projects/city/people_3.jpg');
+      }
+      86%, 92%{
+        background-image: url('../../assets/images/projects/city/people_3.jpg');
+      }
+    }
+    @-moz-keyframes reel {
+      6%, 16%{
+        background-image: url('../../assets/images/projects/city/city_2.jpg'), url('../../assets/images/projects/city/people_5.jpg');
+      }
+      22%, 32%{
+        background-image: url('../../assets/images/projects/city/people_5.jpg'), url('../../assets/images/projects/city/people_4.jpg');
+      }
+      38%, 48%{
+        background-image: url('../../assets/images/projects/city/people_4.jpg'), url('../../assets/images/projects/city/full_view_4.jpg');
+      }
+      54%, 64%{
+        background-image: url('../../assets/images/projects/city/full_view_4.jpg'), url('../../assets/images/projects/city/desk.jpg');
+      }
+      70%, 80%{
+        background-image: url('../../assets/images/projects/city/desk.jpg'), url('../../assets/images/projects/city/people_3.jpg');
+      }
+      86%, 92%{
+        background-image: url('../../assets/images/projects/city/people_3.jpg');
       }
     }
     @-webkit-keyframes reel {

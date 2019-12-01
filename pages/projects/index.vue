@@ -110,11 +110,11 @@
               width: 20px;
             }
             &.design { 
-              left: 96px;
+              left: 95px;
               width: 50px;
             }
             &.develop { 
-              left: 198px;
+              left: 197px;
               width: 60px;
             }
           }
@@ -132,6 +132,19 @@
       &:hover{
         .project { 
           opacity: 0.3;
+        }
+      }
+      &.touch-screen{
+        &:hover{
+          .project { 
+            opacity: 1;
+          }
+        }
+        .project{ 
+          &:hover{
+            transform: scale(1);
+            opacity: 1;
+          }
         }
       }
       .squash-enter-active, .squash-leave-active {
@@ -406,7 +419,7 @@
         <div class="selected" :class="tab"></div>
       </div>
     </div>
-    <div class="project-container">
+    <div class="project-container" :class="{'touch-screen': $store.state.touch_screen}">
       <!-- APP DEV -->
       <transition name="squash">
         <div class="row" v-show="filter == 'all' || filter == 'develop'" @click="$router.push('projects/jf-app-dev')">

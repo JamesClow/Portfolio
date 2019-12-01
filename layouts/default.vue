@@ -14,6 +14,8 @@
       margin: 0px;
       padding: 0px;
       font-family: 'Montserrat', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       color: $text;
       font-weight: 600;
     }
@@ -400,6 +402,9 @@
     // middleware: 'destortion'
     created(){
       if(process.client){
+        window.addEventListener('touchstart', ()=>{
+          this.$store.commit("setTouchScreen", true);
+        });
         window.addEventListener('scroll', this.scrollEvent)
         window.addEventListener('resize', this.handleResize)
         this.handleResize();
