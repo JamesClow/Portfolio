@@ -11,7 +11,7 @@
       .cover-row { 
         display: flex;
         .description-column { 
-          width: 50%;
+          width: 100%;
         }
         .image-container { 
           width: 50%;
@@ -30,6 +30,9 @@
           @media screen and (max-width: 1200px){
             margin-bottom: 20px;
           }
+          @media screen and (max-width: 760px){
+            flex-direction: column;
+          }
           .image-container{
             padding-right: 40px;
             &:last-child{
@@ -38,12 +41,26 @@
             @media screen and (max-width: 1200px){
               padding-right: 20px;
             }
+            @media screen and (max-width: 760px){
+              padding-right: 0px;
+              margin-top: 20px;
+              &:first-child{
+                margin-top: 0px;
+              }
+              .three{
+                width: 50%;
+                transform: translateX(50%);
+              }
+            }
           }
           img{
             max-width: 100%;
             border-radius: 10px;
             box-shadow: $z_depth_1;
             width: 100%;
+            @media screen and (max-width: 760px){
+              border-radius: 5px;
+            }
           }
         }
       }
@@ -94,6 +111,15 @@
         }
         .description{
           width: 60%;
+        }
+        @media screen and (max-width: 460px){
+          flex-direction: column;
+          .name{
+            width: 100%;
+          }
+          .description{
+            width: 100%;
+          }
         }
       }
     }

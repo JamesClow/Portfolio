@@ -87,11 +87,14 @@
         @media screen and (max-width: 900px){
           padding: 90px 12% 50px 12%;
         }
+        @media screen and (max-width: 760px){
+          padding: 90px 12% 0px 12%;
+        }
         @media screen and (max-width: 580px){
-          padding: 50px 6% 50px 6%;
+          padding: 60px 6% 0px 6%;
         }
         @media screen and (max-width: 420px){
-          padding: 90px 4% 50px 4%;
+          padding: 60px 4% 0px 4%;
         }
         .mobile-container{
           display: none;
@@ -106,6 +109,12 @@
           font-weight: 700;
           color: $highlight;
           white-space: nowrap;
+          @media screen and (max-width: 500px){
+            white-space: normal;
+            br{
+              display: none;
+            }
+          }
         }
         .faq { 
           // margin: 60px 0px;
@@ -290,13 +299,14 @@
           I love combining technology,  <br />
           art and psychology. Together  <br />
           they make something magical.
-          <br />
-          <br />
-          <br />
           <!-- I love creating memorable<br />
           experiences and working <br />
           with passionate people.  -->
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <!-- <div class="faq">
           <div class="faq-title">
             What excites me?

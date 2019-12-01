@@ -365,19 +365,19 @@
         <div class="close-nav" v-if="nav_state == 'menu'" v-click-outside="closeMenu"></div>
         
         <div class="about-container nav-container">
-          <div class="nav-1 nav" v-if="nav_state != ''" @click="loadRoute('about')"></div>
+          <div class="nav-1 nav" v-if="nav_state != ''" @click.stop.prevent="loadRoute('about')"></div>
           <div class="route-1 route" :class="{'active': urlContains('about')}">
             About
           </div>
         </div>
         <div class="projects-container nav-container">
-          <div class="nav-2 nav" v-if="nav_state != ''" @click="loadRoute('projects')"></div>
+          <div class="nav-2 nav" v-if="nav_state != ''" @click.stop.prevent="loadRoute('projects')"></div>
           <div class="route-2 route" :class="{'active': urlContains('projects') || urlContains('default')}">
             Projects
           </div>
         </div>
         <div class="studio-container nav-container">
-          <div class="nav-3 nav" v-if="nav_state != ''" @click="loadRoute('studio')"></div>
+          <div class="nav-3 nav" v-if="nav_state != ''" @click.stop.prevent="loadRoute('studio')"></div>
           <div class="route-3 route" :class="{'active': urlContains('studio')}">
             Studio
           </div>

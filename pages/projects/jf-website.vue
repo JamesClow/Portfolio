@@ -6,12 +6,7 @@
     flex-direction: column;
     align-items: center;
     .limiter{ 
-      .cover-row { 
-        display: flex;
-        align-items: center;
-        @media screen and (max-width: 600px){
-          flex-direction: column-reverse;
-        }
+      .full-row { 
         .description-column { 
           width: 40%;
           @media screen and (max-width: 600px){
@@ -107,7 +102,7 @@
 <template>
   <div id="website-page">
     <div class="limiter">
-      <div class="cover-row">
+      <div class="full-row">
         <div class="description-column">
           <div class="title bold macro">
             Website
@@ -300,7 +295,7 @@
             Next Project
           </div>
           <div class="project-label small-section-title large bold">
-            Installation - Under The Moon
+            <span>Installation</span> <span>- Under The Moon</span>
           </div>
         </div>
       </div>

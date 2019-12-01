@@ -169,7 +169,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin: 80px 0px;
+          // margin: 80px 0px;
           img{
             width: 60%;
           }
@@ -261,6 +261,8 @@
       </div>
     </div>
     <div class="reel-mobile"></div>
+    <br />
+    <br />
     <div class="summary">
       <div class="summary-col limiter">
         <div class="spacer">
@@ -271,8 +273,9 @@
           <div class="description">
             Under The Moon was an experimental art installation developed in collaboration with Sommer Shearer, Greg Hardie, and Travis Powell. The project consisted of two parts. The first was a performance piece that debuted on May 29th, 2015, at the Shwayder Art Museum in Denver. The second was a looped experience exhibited in the same space for the following two days. The goal of this project was to create an immersive and unique experience using cutting edge digital practices.
           </div>
-        </div>
-        <div class="spacer">
+          <br />
+          <br />
+          <br />
           <div class="small-section-title large bold">
             Challenges
           </div>
@@ -281,13 +284,13 @@
             We knew there would be substantial technical hurdles in creating this project. One of the biggest challenges was figuring out how to create the illusion of a planet floating in space. We had to develop a new method for creating five-point spherical projection mapping using Adobe After Effects. Additionally, we wanted to create a 3D soundscape using 12 speakers placed around the installation. We experimented with several types of audio software but ultimately decided to use a hybrid approach to mix 12 channels of audio.
           </div>
         </div>
-        <div class="mock-row">
+        <div class="mock-row spacer">
           <img src="~/assets/images/projects/city/Projection_SideView.png" />
           <div class="desciption bold">
             5 Point Projection
           </div>
         </div>
-        <div class="mock-row">
+        <div class="mock-row spacer">
           <div class="desciption bold">
             12 Channel Audio
           </div>

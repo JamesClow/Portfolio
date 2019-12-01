@@ -512,7 +512,7 @@
                 Next Project
               </div>
               <div class="project-label large bold">
-                Development - Juris Futura
+                <span>Development</span> <span>- Juris Futura</span>
               </div>
             </div>
           </div>

@@ -6,12 +6,7 @@
     flex-direction: column;
     align-items: center;
     .limiter { 
-      .cover-row { 
-        display: flex;
-        padding-top: 80px;
-        @media screen and (max-width: 600px){
-          flex-direction: column-reverse;
-        }
+      .full-row { 
         .description-column { 
           width: 50%;
           @media screen and (max-width: 600px){
@@ -20,9 +15,18 @@
         }
         .image-container { 
           width: 50%;
+          // @media screen and (max-width: 1200px){
+          //   width: 80%;
+          //   margin-bottom: 50px;
+          //   margin-top: 50px;
+          // }
           @media screen and (max-width: 600px){
             width: 100%;
+            margin-top: 0px;
             margin-bottom: 50px;
+            img { 
+              max-width: 85%;
+            }
           }
           img { 
             max-width: 100%;
@@ -45,6 +49,9 @@
           display: flex;
           align-items: flex-start;
           justify-content: center;
+          @media screen and (max-width: 600px){
+            width: 100%;
+          }
         }
         .small-section-title{
           color: $highlight;
@@ -285,7 +292,7 @@
 <template>
   <div id="branding-page">
     <div class="limiter">
-      <div class="cover-row">
+      <div class="full-row">
         <div class="description-column">
           <div class="title bold macro">
             Branding
@@ -356,13 +363,22 @@
                 2
               </div>
               <div class="title">
-                Human-Centered
+                Technology Focused
               </div>
             </div>
             <br />
             <div class="process-row">
               <div class="stage">
                 3
+              </div>
+              <div class="title">
+                Human-Centered
+              </div>
+            </div>
+            <br />
+            <div class="process-row">
+              <div class="stage">
+                4
               </div>
               <div class="title">
                 Whimsical

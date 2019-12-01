@@ -110,7 +110,7 @@ div, .regular{
   align-items: center;
 }
 .limiter{
-  width: 1000px;
+  width: 1050px;
   position: relative;
 }
 .limiter-narrow{
@@ -124,7 +124,7 @@ div, .regular{
 }
 @media screen and (min-width: 1800px){
   .limiter{
-    width: 1400px;
+    width: 1450px;
   }
   .limiter-narrow{
     width: 1000px;
@@ -149,7 +149,7 @@ div, .regular{
 }
 @media screen and (max-width: 1200px){
   .limiter{
-    width: 660px;
+    width: 680px;
   }
   .limiter-narrow{
     width: 460px;
@@ -169,28 +169,52 @@ div, .regular{
     width: 420px;
   }
 }
+// @media screen and (max-width: 760px){
+//   .spacer{ 
+//     padding: 30px 0px;
+//   }
+//   .spacer-tight{ 
+//     padding: 15px 0px;
+//   }
+// }
 @media screen and (max-width: 600px){
   .limiter{
-    width: 360px;
+    width: 450px;
   }
   .limiter-narrow{
-    width: 360px;
+    width: 450px;
   }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 580px){
   .limiter{
-    width: 280px;
+    width: 400px;
   }
   .limiter-narrow{
-    width: 280px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 460px){
+  .limiter{
+    width: 340px;
+  }
+  .limiter-narrow{
+    width: 340px;
+  }
+}
+@media screen and (max-width: 390px){
+  .limiter{
+    width: 300px;
+  }
+  .limiter-narrow{
+    width: 260px;
   }
 }
 @media screen and (max-width: 340px){
   .limiter{
-    width: 260px;
+    width: 270px;
   }
   .limiter-narrow{
-    width: 260px;
+    width: 240px;
   }
 }
 
@@ -312,22 +336,25 @@ div, .regular{
   font-weight: 700;
 }
 .role { 
-  margin-top: 15px;
+  margin-top: 10px;
   font-weight: 700;
+  &:first-child{
+    margin-top: 0px;
+  }
 }
 @media screen and (min-width: 1800px){
   .role { 
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 1430px){
   .role { 
-    margin-top: 12px;
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 1200px){
   .role { 
-    margin-top: 10px;
+    margin-top: 6px;
   }
 }
 
@@ -347,12 +374,30 @@ div, .regular{
     margin-top: 100px;
   }
   @media screen and (max-width: 700px){
-    
+
   }
   @media screen and (max-width: 480px){
     // margin-bottom: 20px;
   }
   @media screen and (max-width: 380px){
+  }
+}
+
+.full-row { 
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  @media screen and (max-width: 1200px){
+    height: auto;
+    margin-top: 180px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 1000px){
+    margin-top: 160px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 600px){
+    flex-direction: column-reverse;
   }
 }
 
@@ -424,19 +469,59 @@ div, .regular{
 }
 
 
-
-
-
-
-
-
+.next{
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: -40px;
+    padding: 40px;
+    @media screen and (max-width: 760px){
+      margin: 0px;
+      padding: 20px;
+    }
+    &:hover{
+      cursor: pointer;
+      .project-label{
+        color: $highlight;
+        transform: scale(1.05);//translateX(10px);
+      }
+    }
+    .next-label{
+      color: $highlight;
+      margin-bottom: 10px;
+    }
+    .project-label{
+      transition: all 0.4s ease;
+      color: $text;
+      text-align: right;
+      span{
+        display: inline-block;
+      }
+    }
+  }
+}
 
 .large-summary{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  @media screen and (max-width: 580px){
+    br{
+      display: none;
+    }
+  }
 }
+
+
+
+
+
 
 .summary-title{
   color: $highlight;
@@ -482,33 +567,4 @@ div, .regular{
   display: flex;
   align-items: center;
   // margin-bottom: 30px;
-}
-
-.next{
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  .button-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: -40px;
-    padding: 40px;
-    &:hover{
-      cursor: pointer;
-      .project-label{
-        color: $highlight;
-        transform: scale(1.05);//translateX(10px);
-      }
-    }
-    .next-label{
-      color: $highlight;
-      margin-bottom: 10px;
-    }
-    .project-label{
-      transition: all 0.4s ease;
-      color: $text;
-    }
-  }
 }

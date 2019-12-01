@@ -208,23 +208,47 @@
               }
         			.company { 
                 color: $highlight;
-                margin-bottom: 5px;
+                // margin-bottom: 8px;
         			}
         			.name { 
-                margin-bottom: 30px;
+                margin-bottom: 4px;
         			}
         			.date { 
-                margin-bottom: 5px;
+                color: $text-light;
+                margin-bottom: 8px;
         			}
         			.about { 
-                color: $text-light;
-                margin-bottom: 30px;
+                
         			}
 
         			.go { 
                 color: $highlight;
         				.lets-go { 
-
+                  position: relative;
+                  display: inline-block;
+                  &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0px;
+                    height: 3px;
+                    width: 0%;
+                    background-color: $highlight;
+                    transition: width 0.5s ease;
+                    @media screen and (min-width: 1800px){
+                      bottom: -5px;
+                      height: 4px;
+                    }
+                    @media screen and (max-width: 1200px){
+                      bottom: -3px;
+                      height: 2px;
+                    }
+                  }
+                  &:hover{
+                    &::after{
+                      width: 100%;
+                    }
+                  }
         				}
         			}
         		}
@@ -250,7 +274,7 @@
       <div class="welcome-container">
         <img class="profile-pic" src="../assets/images/profile_pic_small.png"/>
         <div class="welcome mega">
-          <span class="hi bold">Hi,</span> I’m James. I create<br />
+          <span class="hi bold">Hello,</span> I’m James. I create<br />
           intuitive digital products.
         </div>
       </div>
@@ -260,7 +284,7 @@
       <div class="limiter spacer">
         <div class="row">
           <div class="col about">
-            <div class="label bold regular">
+            <div class="label bold large">
               What I do
             </div>
             <div class="what-i-do large">
@@ -303,7 +327,7 @@
             </div>
           </div>
           <div class="col projects">
-            <div class="label bold regular">
+            <div class="label bold large">
               Featured Project
             </div>
             <div class="product-botton" @click="$router.push('projects/jf-app-dev')">
@@ -311,21 +335,20 @@
                 <img src="../assets/images/projects/jf_branding/futura_horizontal_white_red.svg" />
               </div>
               <div class="project-info">
-                <div class="company">
-                  Juris Futura
-                </div>
-                <div class="name large">
+                <div class="name bold">
                   App Development
                 </div>
-                <div class="date">
-                  2016 - 2019
+                <div class="company bold">
+                  Juris Futura
                 </div>
-                <div class="about">
+                <br />
+                <div class="about small">
                   Here I designed and built large scale web applications.
                 </div>
+                <br />
                 <div class="go">
-                  <div class="lets-go">
-                    Lets Go
+                  <div class="lets-go small">
+                    Learn More
                   </div>
                 </div>
               </div>
