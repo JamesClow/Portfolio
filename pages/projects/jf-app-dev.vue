@@ -32,6 +32,19 @@
           }
           @media screen and (max-width: 760px){
             flex-direction: column;
+            &.three{
+              flex-direction: row;
+              .image-container{
+                padding-right: 20px;
+              }
+            }
+          }
+          @media screen and (max-width: 460px){
+            &.three{
+              .image-container{
+                padding-right: 10px;
+              }
+            }
           }
           .image-container{
             padding-right: 40px;
@@ -46,10 +59,9 @@
               margin-top: 20px;
               &:first-child{
                 margin-top: 0px;
-              }
-              .three{
-                width: 50%;
-                transform: translateX(50%);
+                .three{
+                  margin-top: 20px;
+                }
               }
             }
           }
@@ -314,7 +326,7 @@
     </div>
     <div class="limiter">
       <div class="product-row spacer">
-        <div class="image-row">
+        <div class="image-row three">
           <div class="image-container">
             <img class="three" src="../../assets/images/projects/jf_dev/ex8.png" />
           </div>

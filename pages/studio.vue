@@ -98,6 +98,11 @@
     .full-page-container{
       z-index: 1;
       #fullpage{
+        &.fp-destroyed{
+          img{
+            display: none !important;
+          }
+        }
         .section{
           margin: 0px !important;
           .fp-tableCell{
@@ -208,14 +213,6 @@
 
 <script>
   export default {
-    head: {
-      script: [
-        { src: 'fullpage.min.js' }
-      ],
-      link: [
-        { rel: 'stylesheet', href: 'fullpage.min.css' }
-      ]
-    },
     transition: 'fade-page',
     data(){
       return {

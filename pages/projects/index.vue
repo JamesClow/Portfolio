@@ -175,9 +175,9 @@
           width: 100%;
           @media screen and (max-width: 700px){
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             margin: 25px 0px;
-            width: auto;
+            // width: auto;
           }
           @media screen and (max-width: 380px){
             margin: 15px 0px;
@@ -340,6 +340,7 @@
           align-items: flex-start;
           @media screen and (max-width: 700px){
             // flex-direction: row;
+            align-items: center;
           }
           .company-name { 
             font-weight: 700;
@@ -354,8 +355,10 @@
           }
           .roles { 
             // margin-bottom: 30px;
-            @media screen and (max-width: 1200px){
-              // margin-bottom: 15px;
+            @media screen and (max-width: 700px){
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
           }
           .learn-more-button { 
@@ -534,7 +537,7 @@
             <div class="project-module">
               <div class="image-container">
                 <div class="globe-frame">
-                  <img class="globe" src="../../assets/images/projects/city/sample.png" />
+                  <img class="globe" src="../../assets/images/projects/city/sample.jpg" />
                 </div>
               </div>
               <div class="description-container">
@@ -594,7 +597,18 @@
           </div>
         </div>
       </transition>
-      
+      <div class="limiter">
+        <div class="next">
+          <div class="button-container" @click="$router.push('/studio')">
+            <div class="next-label label bold">
+              Next
+            </div>
+            <div class="project-label small-section-title bold large">
+              Studio Art
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
