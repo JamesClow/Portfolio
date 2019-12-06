@@ -29,7 +29,7 @@
             margin-bottom: 50px;
           }
           .image-frame{
-            img { 
+            video{
               max-width: 100%;
             }
           }
@@ -124,7 +124,10 @@
         </div>
         <div class="image-container">
           <div class="image-frame">
-            <img src="../../assets/images/projects/jf_web/home_page_fallback.jpg" />
+            <video autoplay playsinline muted loop preload poster="images/home_page_fallback.jpg">
+              <source src="../../assets/images/projects/jf_web/home_page.mp4" />
+            </video>
+            <!-- <img src="../../assets/images/projects/jf_web/home_page_fallback.jpg" /> -->
           </div>
         </div>
       </div>
@@ -166,6 +169,7 @@
             <div class="process-row">
               <div class="stage">
                 1
+                <img class="arrow" src="../../assets/images/arrow.svg" />
               </div>
               <div class="title">
                 Requirement Gathering 
@@ -175,24 +179,7 @@
             <div class="process-row">
               <div class="stage">
                 2
-              </div>
-              <div class="title">
-                User Research
-              </div>
-            </div>
-            <br />
-            <div class="process-row">
-              <div class="stage">
-                3
-              </div>
-              <div class="title">
-                Story Boarding
-              </div>
-            </div>
-            <br />
-            <div class="process-row">
-              <div class="stage">
-                4
+                <img class="arrow" src="../../assets/images/arrows_circle.svg" />
               </div>
               <div class="title">
                 Prototyping
@@ -201,7 +188,8 @@
             <br />
             <div class="process-row">
               <div class="stage">
-                5
+                3
+                <img class="arrow" src="../../assets/images/arrow.svg" />
               </div>
               <div class="title">
                 User Feedback
@@ -210,7 +198,8 @@
             <br />
             <div class="process-row">
               <div class="stage">
-                6
+                4
+                <img class="arrow" src="../../assets/images/arrows_circle.svg" />
               </div>
               <div class="title">
                 Development
@@ -219,7 +208,8 @@
             <br />
             <div class="process-row">
               <div class="stage">
-                7
+                5
+                <img class="arrow" src="../../assets/images/arrow.svg" />
               </div>
               <div class="title">
                 User Testing
@@ -228,7 +218,7 @@
             <br />
             <div class="process-row">
               <div class="stage">
-                8
+                6
               </div>
               <div class="title">
                 Launch
