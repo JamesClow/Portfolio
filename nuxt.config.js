@@ -20,6 +20,10 @@ export default {
       
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
+    script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-47JHD3EYPK' },
+      { src: '/gTag.js' }
+    ],
   },
   
   // router: {

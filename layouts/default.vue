@@ -40,6 +40,16 @@
   .fade-enter, .fade-leave-to{
     opacity: 0;
   }
+  
+  .fade-slow-enter-active{
+    transition: opacity 1.5s ease;
+  }
+  .fade-slow-leave-active{
+    transition: opacity 1.5s ease;
+  }
+  .fade-slow-enter, .fade-slow-leave-to{
+    opacity: 0;
+  }
 
   #app{
     -webkit-font-smoothing: antialiased;

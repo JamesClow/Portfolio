@@ -321,7 +321,7 @@
           </div>
           <br />
           <div class="faq-text">
-            Great design is the culmination of intuitive functionality, beautiful aesthetics, and a deep understanding of the human condition. Great design is unobtrusive and often goes unnoticed. Finally, great design is consistent in every detail.
+            Great design combines intuitive functionality, beautiful aesthetics, and a deep understanding of the human condition. Great design is unobtrusive and often goes unnoticed. Finally, great design is consistent in every detail.
           </div>
         </div>
         <br />
@@ -389,13 +389,13 @@
             </div>
             <div class="job-description">
               <br />
-              I played several different roles in the company, including front end developer, UI designer, and product designer.
+              I played several different roles in the company, including Front End Developer, UI Designer, and Product Designer. 
               <br /><br />
               Our primary focus was on building large B2B web applications for legal automation.
               <br /><br />
-              I collaborated closely with our users, marketing team, and product stakeholders to maximize product quality.
+              I collaborated closely with our users, developers, marketers, and product stakeholders to maximize product quality.
               <br /><br />
-              I worked with a fast pasted team in a continues cycle of rapid prototyping and user testing.
+              I worked with a fast paced team in a continues cycle of rapid prototyping and user testing.
             </div>
           </div>
           <br />
@@ -416,7 +416,7 @@
               <br />
               I created a web application for managing and validating the client's data to ensure that it was compatible with Tendril's other services.
               <br /><br />
-              I built a web interface for monitoring the status of applications deployed on development, staging, and production servers.
+              I built a web interface for monitoring the status of applications running on development, staging, and production servers.
             </div>
           </div>
           <br />
