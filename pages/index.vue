@@ -504,15 +504,15 @@
                     <div class="image-container" key="1" v-if="active_project == 1">
                       <img src="../assets/images/projects/jf_branding/futura_horizontal_white_red.jpg" class="logo"/>
                     </div>
-                    <div class="image-container" key="2" v-if="active_project == 2">
+                    <!-- <div class="image-container" key="2" v-if="active_project == 2">
                       <img src="../assets/images/projects/jf_web/home_page_small.jpg"/>
-                    </div>
+                    </div> -->
                     <div class="image-container" key="2" v-if="active_project == 2">
                       <img src="../assets/images/projects/city/splash_page.jpg"/>
                     </div>
-                    <div class="image-container" key="4" v-if="active_project == 4">
+                    <!-- <div class="image-container" key="4" v-if="active_project == 4">
                       <img src="../assets/images/projects/colors/color_splash.jpg"/>
-                    </div>
+                    </div> -->
                   </transition-group>
                 </div>
                 <div class="project-info">
