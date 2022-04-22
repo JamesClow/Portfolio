@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "express": "^4.17.1",
-    "fullpage.js": "^3.0.7",
+    "fullpage.js": "^4.0.5",
     "gsap": "^2.1.3",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
